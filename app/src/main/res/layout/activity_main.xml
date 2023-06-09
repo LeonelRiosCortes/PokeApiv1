@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/conLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#97EDE3"
+    app:srcCompat = "@drawable/pokebolas"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D2E87F7F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/pokebolas" />
+
 
     <TextView
         android:id="@+id/nameTextView"
@@ -26,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:adjustViewBounds="true"
-        android:background="@android:color/holo_blue_dark"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +54,10 @@
         android:layout_marginTop="32dp"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/btnFindPoke"
+        android:textStyle="bold"
+        android:background="#D2E87F7F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:text="Altura: 1m" />
 
@@ -58,7 +70,11 @@
         android:layout_marginLeft="32dp"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@id/btnFindPoke"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:background="#D2E87F7F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/heightText"
         tools:text="Peso: 1kg" />
 
@@ -75,6 +91,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weightText"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Busca otro \n Pokemon" />
+        android:text="Mostrar\nPokemon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
